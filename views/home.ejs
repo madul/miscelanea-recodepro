@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E o seu dia?</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+  <main class="p-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center p-2 ">
+      <% if(classe.length > 0) {%>
+        <% if(classe == 'text-success'){%> 
+          SIM!!! 
+        <%} else{%> 
+          NÃO! 
+        <%}%>
+      <%} else {%>
+        Hoje o dia vai dar certo?
+      <%}%>      
+    </h1>
+
+    <div class="m-2 card w-50">
+      <form method="post" action="/">
+        <div class="form-group m-3">
+          <label>Nome:</label>
+          <input class="form-control" type="text" id="nome" name="nome" placeholder="Escreva seu nome" />
+        </div>
+        <div class="form-check m-3">
+          <input class="form-check-input" type="radio" name="escolha" value="1" checked>
+          <label class="form-check-label">Sol</label>
+        </div>
+        <div class="form-check m-3">
+          <input class="form-check-input" type="radio" name="escolha" value="2">
+          <label class="form-check-label">Lua</label>
+        </div>
+        <input class="btn btn-primary m-2" type="submit"/>
+      </form>
+      
+    </div>
+    <% if(typeof error !== 'undefined') { %>
+      
+      <% for (i = 0; i < error.errors.length; i++) { %>
+        <p class="text-danger"><%=error.errors[i].msg%></p>
+      <% } %>
+    <% } %>
+    <section class="conteiner-fluid d-flex flex-column justify-content-center align-items-center ">
+      <% if(frase.length  > 0 && nome.length > 0) { %>
+        <h2 class="<%=classe%>"><%=nome%>, <%=bomDia%></h2>
+        
+        <article class="text-center w-75">
+          <h3>Sabedoria do dia:</h3>
+          <p><%=frase%></p>
+        </article>
+      <%}%>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
