@@ -3,7 +3,7 @@ Conjunto de exercícios da Recode Pro
 
 ### node-avancado: 
 
-Exercício de NodeJS do módulo avançado.
+Exercício de avaliação do módulo de NodeJS avançado.
 Para rodá-lo é necessário instalar os seguintes módulos:
 * CommonJS 
 ```
@@ -26,4 +26,12 @@ E recomenda-se utilizar
 * Nodemon
 ```
 npm install nodemon
+```
+
+### mod-python
+Exercício de avaliação do módulo de Python
+Para executálo é necessário instalar a seguinte biblioteca:
+* Flask
+```
+pip install Flask
 ```
