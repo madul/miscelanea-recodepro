@@ -30,8 +30,20 @@ npm install nodemon
 
 ### mod-python
 Exercício de avaliação do módulo de Python
-Para executálo é necessário instalar a seguinte biblioteca:
+Para executá-lo é necessário instalar a seguinte biblioteca:
 * Flask
 ```
 pip install Flask
 ```
+
+### react-ssr
+Exercício de avaliação do módulo React Back avançado. 
+Propõe explorar o Server Side Rendering.
+São necessárias as seguintes bibliotecas:
+* next
+* next-compose-plugins
+* next-optimized-images
+* @zeit/next-css
+* react 
+* react-bootstrap
+* bootstrap
