@@ -47,3 +47,5 @@ São necessárias as seguintes bibliotecas:
 * react 
 * react-bootstrap
 * bootstrap
+
+Rodar com o comando ```yarn dev ```
