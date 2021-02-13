@@ -18,3 +18,9 @@ export default User;
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+/*
+O NextJS trabalha com o conceito de páginas, na sua contrução e roteamento. 
+Assim, esse index dentro da pasta pages é o 'primeiro' arquivo a ser rodado ao chamar yarn dev. Ele pré renderiza todos os arquivos antes de consumí-los no browser.
+
+*/
